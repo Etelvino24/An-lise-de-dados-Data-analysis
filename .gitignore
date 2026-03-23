@@ -206,17 +206,46 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Dados
-data/
-*.csv
-*.xlsx
-
-# Permitir amostra
+# =========================
+# DADOS
+# =========================
+data/*
 !data/sample_data.csv
 !data/sample_data.xlsx
+!data/.gitkeep
 
-# Power BI
+# =========================
+# POWER BI
+# =========================
 *.pbix
+!powerbi/dashboard.pbix
 
-# IDE
+# =========================
+# PYTHON
+# =========================
+venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+
+# JUPYTER
+.ipynb_checkpoints/
+
+# =========================
+# LOGS E TEMP
+# =========================
+*.log
+*.tmp
+
+# =========================
+# SISTEMA
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITORES
+# =========================
 .vscode/
+.idea/
